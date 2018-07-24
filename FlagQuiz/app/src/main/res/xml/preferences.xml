@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:entries="@array/question_list"
+        android:entryValues="@array/question_list"
+        android:key="pref_numberOfQuestions"
+        android:title="Number of Questions"
+        android:summary="Ask 5, 10 or 15 questions"
+        android:persistent="true"
+        android:defaultValue="10" />
+
+    <ListPreference
+        android:entries="@array/guesses_list"
+        android:entryValues="@array/guesses_list"
+        android:key="pref_numberOfChoices"
+        android:title="Number of Choices"
+        android:summary="Display 2, 4, 6 or 8 guess buttons"
+        android:persistent="true"
+        android:defaultValue="4" />
+
+    <MultiSelectListPreference
+        android:entries="@array/regions_list_for_settings"
+        android:entryValues="@array/regions_list_for_settings"
+        android:key="pref_regionToInclude"
+        android:title="@string/world_regions"
+        android:summary="@string/world_regions_description"
+        android:persistent="true"
+        android:defaultValue="@array/regions_list" />
+
+</PreferenceScreen>
